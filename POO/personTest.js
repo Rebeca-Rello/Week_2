@@ -1,65 +1,26 @@
 
 
 
-class Persona{ 
-
-    constructor(peso, estatura, colorOjos, colorPelo,yearOfBirth,hobbies)
-    
-    {   
-        this.peso = peso
-        this.altura = estatura
-        this.colorOjos = colorOjos
-        this.colorPelo = colorPelo
-        this.yearOfBirth = yearOfBirth
-        this.hobbies= [hobbies]
-       
-    }
+const {Persona}= require("./person")
 
 
-    calcularIMC(){
+// console.log('*******METER VALORES EN PARAMETRO******');
 
-        return this.peso/(this.altura*this.altura);
-    }
+// let mario= new Persona(70,1.80, "verdes", "rubio", 1980, "nadar bailar leer");
+// console.log(mario);
 
-    edad(year){
+// console.log('*******CALCULAR IMC******');
 
-        return year - this.yearOfBirth;
-    }
+// console.log(mario.calcularIMC());
 
-    printAll(){
+// console.log('*******CALCULAR EDAD******');
 
-        for(let datos in Persona){
-            return datos in Persona[datos];
-        }
-    }
+// console.log(mario.edad(2023));
 
-    printHobbies(){
+// console.log('*******HOBBIES******');
 
-      return this.hobbies;
+// console.log(mario.printHobbies());
 
-    }
+// console.log('*******PRINT ALL******');
 
-
-}
-
-
-
-
-console.log('*******METER VALORES EN PARAMETRO******');
-
-let mario= new Persona(70,1.80, "verdes", "rubio", 1980, "nadar bailar leer");
-console.log(mario);
-
-console.log('*******CALCULAR IMC******');
-
-console.log(mario.calcularIMC());
-
-console.log('*******CALCULAR EDAD******');
-
-console.log(mario.edad(2023));
-
-console.log('*******HOBBIES******');
-
-console.log(mario.printHobbies());
-
-
+// mario.printAll()

@@ -27,8 +27,8 @@ class Persona{
 
     printAll(){
 
-        for(let datos in Persona){
-            return datos in Persona[datos];
+        for(let atributos in this){
+            console.log(atributos + " - " + this[atributos]);
         }
     }
 
@@ -41,5 +41,4 @@ class Persona{
 
 }
 
-////He intentado comprobar los resultado con module.exports, pero al incluir los diferentes
-////metodos, no los seleccionaba, os tengo que consultar por qué.
+module.exports={Persona}
